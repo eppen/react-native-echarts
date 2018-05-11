@@ -81,6 +81,9 @@ screenshots：
 
 ### Android
 
+**tpl.html**ファイルについて
+把tpl.html文件放在自己项目的android/app/src/main/assets/echarts/文件夹下
+
 Open the Android project in the android directory with Android Studio and click run.
 
 screenshots：

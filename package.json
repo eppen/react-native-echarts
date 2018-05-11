@@ -1,6 +1,6 @@
 {
   "name": "baidu-echarts",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "baidu echarts for react-native",
   "main": "src/index.js",
   "directories": {
