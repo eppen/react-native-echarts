@@ -33,9 +33,9 @@ export default class App extends Component {
           scalesPageToFit={Platform.OS === 'android' ? true : false}
           style={{
             height: this.props.height || 400,
+            backgroundColor: this.props.option.backgroundColor || 'rgba(0, 0, 0, 0)'
           }}
           source={source}
-          style={{backgroundColor: this.props.option.backgroundColor || 'rgba(0, 0, 0, 0)'}}
           onMessage={event => this.props.onPress ? this.props.onPress(JSON.parse(event.nativeEvent.data)) : null}
         />
       </View>
