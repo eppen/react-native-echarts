@@ -30,12 +30,12 @@ export default class App extends Component {
           ref="chart"
           scrollEnabled = {false}
           injectedJavaScript = {renderChart(this.props)}
+          scalesPageToFit={Platform.OS === 'android' ? true : false}
           style={{
             height: this.props.height || 400,
-            backgroundColor: this.props.backgroundColor || 'transparent'
           }}
-          scalesPageToFit={Platform.OS !== 'ios'}
           source={source}
+          style={{backgroundColor: this.props.option.backgroundColor || 'rgba(0, 0, 0, 0)'}}
           onMessage={event => this.props.onPress ? this.props.onPress(JSON.parse(event.nativeEvent.data)) : null}
         />
       </View>
